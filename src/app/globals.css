@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* Enable dark mode */
+@variant dark (&:where(.dark, .dark *));
+
+/* Your custom theme variables (optional) */
+@theme inline {
+  --color-primary: #a855f7;
+  --color-secondary: #22c55e;
+}
