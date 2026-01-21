@@ -6,7 +6,7 @@ import { ArrowRight, Link2, Zap } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-purple-50 via-white to-white dark:from-gray-900 dark:via-gray-950 dark:to-gray-950">
+    <section className="relative overflow-hidden bg-linear-to-b from-purple-50 via-white to-white dark:from-gray-900 dark:via-gray-950 dark:to-gray-950">
       <div className="mx-auto max-w-7xl px-4 py-[2.65rem] sm:px-6 sm:py-12 md:py-16 lg:px-8 lg:py-23">
         <div className="grid items-center gap-6 sm:gap-10 md:gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Left Side - Text Content */}
@@ -66,7 +66,7 @@ const Hero = () => {
 
           {/* Right Side - Image/Illustration */}
           <div className="relative mt-6 sm:mt-8 lg:mt-0">
-            <div className="relative rounded-2xl sm:rounded-3xl bg-gradient-to-br from-purple-400 to-purple-600 p-5 sm:p-8 shadow-2xl backdrop-blur-xl dark:from-purple-600 dark:to-purple-800">
+            <div className="relative rounded-2xl sm:rounded-3xl bg-linear-to-br from-purple-400 to-purple-600 p-5 sm:p-8 shadow-2xl backdrop-blur-xl dark:from-purple-600 dark:to-purple-800">
               {/* Decorative Elements */}
               <div className="absolute -right-3 -top-3 sm:-right-4 sm:-top-4 h-20 w-20 sm:h-24 sm:w-24 rounded-full bg-yellow-300 opacity-30 blur-2xl sm:blur-3xl"></div>
               <div className="absolute -bottom-3 -left-3 sm:-bottom-4 sm:-left-4 h-24 w-24 sm:h-32 sm:w-32 rounded-full bg-pink-300 opacity-30 blur-2xl sm:blur-3xl"></div>

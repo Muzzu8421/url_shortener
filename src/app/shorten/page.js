@@ -195,7 +195,7 @@ const ShortenPage = () => {
 
           {/* Result Section */}
           {shortUrl && (
-            <div className="mt-3 space-y-2.5 rounded-lg bg-gradient-to-br from-purple-50 to-purple-100 p-3 dark:from-purple-900/20 dark:to-purple-800/20 sm:mt-4 sm:space-y-3 sm:p-4">
+            <div className="mt-3 space-y-2.5 rounded-lg bg-linear-to-br from-purple-50 to-purple-100 p-3 dark:from-purple-900/20 dark:to-purple-800/20 sm:mt-4 sm:space-y-3 sm:p-4">
               <p className="text-xs font-semibold text-gray-900 dark:text-white sm:text-sm">
                 Your shortened URL:
               </p>
