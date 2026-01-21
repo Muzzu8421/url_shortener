@@ -146,9 +146,6 @@ const ShortenPage = () => {
                   Custom short URL
                 </label>
                 <div className="flex items-center gap-2">
-                  <span className="text-xs text-gray-500 dark:text-gray-400 sm:text-sm whitespace-nowrap">
-                    {typeof window !== 'undefined' ? window.location.origin : ''}/
-                  </span>
                   <input
                     type="text"
                     id="customUrl"
