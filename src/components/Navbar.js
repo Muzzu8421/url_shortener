@@ -66,7 +66,7 @@ const Navbar = () => {
               Try Now
             </Link>
             <Link
-              href="/github"
+              href="https://github.com/Muzzu8421/url_shortener.git"
               className="rounded-lg shadow-lg border-2 border-gray-900 px-4 py-2 text-sm font-semibold text-gray-900 transition-all hover:bg-gray-900 hover:text-white dark:border-purple-400 dark:text-purple-400 dark:hover:bg-purple-900/20"
             >
               GitHub
