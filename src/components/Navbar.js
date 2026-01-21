@@ -1,4 +1,3 @@
-// src/components/Navbar.js
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -59,10 +58,24 @@ const Navbar = () => {
             <NavLink href="/">Home</NavLink>
             <NavLink href="/about">About</NavLink>
 
+            {/* Styled Buttons */}
+            <Link
+              href="/shorten"
+              className="rounded-lg shadow-lg bg-gray-900 px-4 py-2 text-sm font-semibold text-white transition-all hover:bg-gray-950 hover:shadow-xl dark:bg-purple-600 dark:hover:bg-purple-500"
+            >
+              Try Now
+            </Link>
+            <Link
+              href="/github"
+              className="rounded-lg shadow-lg border-2 border-gray-900 px-4 py-2 text-sm font-semibold text-gray-900 transition-all hover:bg-gray-900 hover:text-white dark:border-purple-400 dark:text-purple-400 dark:hover:bg-purple-900/20"
+            >
+              GitHub
+            </Link>
+
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
-              className="rounded-md p-2 text-white hover:bg-purple-500 dark:text-gray-300 dark:hover:bg-gray-800 transition-colors"
+              className="rounded-md cursor-pointer p-2 text-white hover:bg-purple-500 dark:text-gray-300 dark:hover:bg-gray-800 transition-colors"
               aria-label="Toggle theme"
             >
               {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
@@ -100,6 +113,22 @@ const Navbar = () => {
             <MobileNavLink href="/about" onClick={() => setOpen(false)}>
               About
             </MobileNavLink>
+            
+            {/* Mobile Styled Buttons */}
+            <Link
+              href="/shorten"
+              onClick={() => setOpen(false)}
+              className="block shadow-lg rounded-lg bg-gray-900 px-4 py-2.5 text-center text-base font-semibold text-white hover:bg-purple-800 dark:bg-purple-600 dark:hover:bg-purple-500"
+            >
+              Try Now
+            </Link>
+            <Link
+              href="/github"
+              onClick={() => setOpen(false)}
+              className="block shadow-lg rounded-lg border-2 border-gray-900 px-4 py-2.5 text-center text-base font-semibold text-gray-900 hover:bg-purple-950 hover:text-white dark:border-purple-400 dark:text-purple-400 dark:hover:bg-purple-400 dark:hover:text-gray-950"
+            >
+              GitHub
+            </Link>
           </div>
         </div>
       )}
