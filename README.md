@@ -10,7 +10,7 @@
 
 Full-stack URL shortener with custom short links, instant redirects, and dark-mode support.
 
-[Live Demo](#demo) • [Features](#features) • [Quick Start](#quick-start) • [Documentation](#documentation) • [Contributing](#contributing)
+[Live Demo](https://url-shortener-muzzu.vercel.app/) • [Features](#features) • [Quick Start](#quick-start) • [Documentation](#documentation) • [Contributing](#contributing)
 
 </div>
 
