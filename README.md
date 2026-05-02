@@ -2,13 +2,13 @@
 
 <div align="center">
 
-[![Next.js](https://img.shields.io/badge/Next.js-16.1.3-black?style=flat-square&logo=next.js)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-19.2.3-61DAFB?style=flat-square&logo=react)](https://react.dev/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-7.0.0-13AA52?style=flat-square&logo=mongodb)](https://www.mongodb.com/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4-38B2AC?style=flat-square&logo=tailwindcss)](https://tailwindcss.com/)
+[![Next.js](https://img.shields.io/badge/Next.js-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react)](https://react.dev/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-13AA52?style=flat-square&logo=mongodb)](https://www.mongodb.com/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=flat-square&logo=tailwindcss)](https://tailwindcss.com/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 
-A modern, full-stack URL shortener built with **Next.js** and **MongoDB**, featuring custom short links, instant redirects, and a beautiful dark-mode UI.
+Full-stack URL shortener with custom short links, instant redirects, and dark-mode support.
 
 [Live Demo](#demo) • [Features](#features) • [Quick Start](#quick-start) • [Documentation](#documentation) • [Contributing](#contributing)
 
@@ -16,8 +16,18 @@ A modern, full-stack URL shortener built with **Next.js** and **MongoDB**, featu
 
 ---
 
+## Highlights
+
+- **Full-stack architecture**: Next.js API routes with Server-Side Rendering, React frontend, and MongoDB backend
+- **Smart collision detection**: Automatic duplicate prevention with MongoDB indexing strategy
+- **Theme persistence**: localStorage-based dark mode with client-side state management
+- **Scalable design**: RESTful API with dynamic routing supporting future analytics and user features
+
+---
+
 ## Table of Contents
 
+- [Highlights](#highlights)
 - [Overview](#overview)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
@@ -32,6 +42,7 @@ A modern, full-stack URL shortener built with **Next.js** and **MongoDB**, featu
 - [Architecture](#architecture)
 - [Development](#development)
 - [Roadmap](#roadmap)
+- [Learnings](#learnings)
 - [Contributing](#contributing)
 - [License](#license)
 - [Support](#support)
@@ -40,16 +51,14 @@ A modern, full-stack URL shortener built with **Next.js** and **MongoDB**, featu
 
 ## Overview
 
-**URL Shortener** is a full-stack web application that transforms long, unwieldy URLs into compact, shareable short links. Perfect for social media, marketing campaigns, and anywhere you need clean, memorable links.
+**URL Shortener** is a production-ready full-stack application demonstrating modern web development practices. Built with Next.js, React, and MongoDB, it handles URL compression, custom branding, and instant redirects at scale.
 
-Built as a production-ready demonstration of modern full-stack development with **Next.js**, **React**, and **MongoDB**, this project combines scalability with user experience.
+### Key Design Decisions
 
-### Why This Project?
-
-- 🎓 **Learn Full-Stack Development** - Understand how modern web apps work end-to-end
-- ⚡ **Production-Ready Code** - Best practices in real-world scenarios
-- 🚀 **Scalable Architecture** - Easily extends to handle high traffic
-- 🔧 **Modern Stack** - Latest versions of Next.js, React, and MongoDB
+- **Next.js API Routes** for backend: Server-side logic without separate backend infrastructure
+- **MongoDB with indexes**: Unique constraint on short codes prevents duplicates at the database level
+- **Client-side theme management**: localStorage-based state reduces backend queries
+- **Dynamic routing** (`[shorturl]`): Scales to millions of short links without pre-configuration
 
 ---
 
@@ -416,6 +425,32 @@ MIT License - You are free to use this project for personal or commercial purpos
 
 ---
 
+## Learnings
+
+### Technical Insights Gained
+
+**Backend Architecture**
+- Implementing RESTful APIs with Next.js API routes and proper HTTP status codes
+- Handling collision detection at the database layer using MongoDB unique indexes
+- Connection pooling and client management for database efficiency
+
+**Frontend Development**
+- Theme persistence across sessions using browser localStorage
+- Dynamic routing with catch-all segments (`[shorturl]`) for flexible URL patterns
+- Mobile-first responsive design with Tailwind CSS utilities
+
+**Database Design**
+- Indexing strategies for query optimization (unique index on `shortUrl`)
+- Trade-offs between auto-generated vs. custom identifiers in URL shortening systems
+- Timestamp storage for future analytics and auditing
+
+**Full-Stack Considerations**
+- Environment variable management for multi-environment deployments
+- Error handling and validation at both API and database layers
+- How to structure code for scalability (separation of concerns, reusable components)
+
+---
+
 ## Support
 
 ### Getting Help
@@ -423,7 +458,6 @@ MIT License - You are free to use this project for personal or commercial purpos
 - 📖 **Documentation** - Read the [full guide](#documentation)
 - 🐛 **Bug Reports** - [Open an issue](https://github.com/Muzzu8421/url_shortener/issues)
 - 💬 **Discussions** - [GitHub Discussions](https://github.com/Muzzu8421/url_shortener/discussions)
-- 📧 **Email** - [Create an issue](https://github.com/Muzzu8421/url_shortener/issues) with details
 
 ### Troubleshooting
 
